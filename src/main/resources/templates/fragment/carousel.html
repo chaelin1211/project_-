@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--Carousel div 시작-->
+<div th:fragment="carousel" id="carousel-example-2"
+    class="carousel slide carousel-fade container" data-ride="carousel">
+    <!--Indicators-->
+    <th:block layout:fragment="layout.carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-2" data-slide-to="1"></li>
+            <li data-target="#carousel-example-2" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div class="view">
+                    <img class="d-block w-100" src="/image/h2-1.jpg" alt="First slide">
+                    <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption text-left mb-5">
+                    <h3 class="h3-responsive display-3"><strong>Safety</strong></h3>
+                    <p>믿고 안심할 수 있는 유기농 먹거리 입니다.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                    <img class="d-block w-100" src="/image/h2-1.jpg" alt="Second slide">
+                    <div class="mask rgba-black-strong"></div>
+                </div>
+                <div class="carousel-caption  text-left mb-5">
+                    <h3 class="h3-responsive display-3"><strong>Cost-effective</strong></h3>
+                    <p>엄선된 재료로 만든 먹거리를 합리적인 가격에 즐기세요.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                    <img class="d-block w-100" src="/image/h2-3.jpg" alt="Third slide">
+                    <div class="mask rgba-black-slight"></div>
+                </div>
+                <div class="carousel-caption  text-left mb-5">
+                    <h3 class="h3-responsive display-3"><strong>Fast shipping</strong></h3>
+                    <p>주문하신 제품을 바로 즐기세요.</p>
+                </div>
+            </div>
+        </div>
+        <!--/.Slides-->
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+    </th:block>
+</div>
+
+</html>
+<!--/.Carousel 끝-->
